@@ -134,6 +134,12 @@ a.card:hover { border-color: var(--accent); transform: translateY(-3px); }
 .svc p { color: var(--muted); font-size: .97rem; }
 .ai-note { margin-top: clamp(2.5rem, 5vw, 3rem); padding: 1.1rem 1.4rem; border-left: 3px solid var(--spark); background: var(--surface); border-radius: 0 var(--radius) var(--radius) 0; color: var(--muted); max-width: 52rem; }
 .ai-note .label { display: block; color: var(--spark); margin-bottom: .35rem; }
+/* Projects */
+.projects { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 19rem), 1fr)); gap: 1.25rem; }
+.card .meta { display: flex; flex-wrap: wrap; gap: .35rem .9rem; margin-top: auto; padding-top: .8rem; border-top: 1px solid var(--line); font-size: .85rem; color: var(--muted); }
+.card .meta b { color: var(--ink); font-weight: 600; font-variant-numeric: tabular-nums; }
+.status { font-family: var(--mono); font-size: .68rem; letter-spacing: .06em; text-transform: uppercase; border-radius: 999px; padding: .1rem .5rem; margin-left: .4rem; vertical-align: .15em; background: var(--accent-soft); color: var(--accent); }
+.status.done { background: color-mix(in srgb, var(--muted) 15%, transparent); color: var(--muted); }
 
 /* About */
 .about { display: grid; grid-template-columns: minmax(0, 13rem) minmax(0, 1fr); gap: clamp(1.5rem, 4vw, 3rem); }
@@ -173,6 +179,7 @@ footer { padding-block: 2rem 3rem; color: var(--muted); font-size: .85rem; displ
         <li><a href="#eu-funding">EU funding</a></li>
         <li><a href="#who">Who it's for</a></li>
         <li><a href="#services">How I help</a></li>
+        <li><a href="#projects">Projects</a></li>
         <li><a href="#about">About</a></li>
         <li><a class="nav-cta" href="#contact">Contact</a></li>
       </ul>
@@ -259,6 +266,18 @@ footer { padding-block: 2rem 3rem; color: var(--muted); font-size: .85rem; displ
       <div class="svc"><span class="step">4</span><div><h3>Impact, stakeholders &amp; policy</h3><p>Engaging industry, public bodies, communities and regulators to drive uptake and replication, and keeping impact claims aligned with EU policy priorities.</p></div></div>
     </div>
     <p class="ai-note"><span class="label">Growing with AI</span> I use AI tools for faster call scouting, programme analysis and proposal drafting, and I'm extending my reach beyond Horizon Europe and LIFE to the wider EU funding landscape, including the EIC, Digital Europe, Interreg and cascade funding.</p>
+  </section>
+
+  <section class="block" id="projects">
+    <div class="sec-head"><p class="label">Selected projects</p><h2>EU projects I manage.</h2>
+      <p class="intro">Five Horizon Europe and LIFE projects where I work as project manager, together carrying more than €18 million in EU funding. Each links to its official EU project page.</p></div>
+    <div class="projects">
+      <a class="card" href="https://cordis.europa.eu/project/id/101172968" target="_blank" rel="noopener"><span class="tag">Horizon Europe · Innovation Action</span><h3>STUNNED<span class="status">Running</span></h3><p>Orchestrating energy management systems in homes, industry and offices so building clusters can offer flexibility to the grid, with demonstrations in Italy, Spain and France.</p><p class="meta"><span><b>€5.0M</b> EU funding</span><span>2024–2028</span><span class="go">CORDIS ↗</span></p></a>
+      <a class="card" href="https://webgate.ec.europa.eu/life/publicWebsite/project/LIFE23-CET-Scaling-Super-Heero-101167752/upscaling-of-community-based-energy-efficiency-retrofitting" target="_blank" rel="noopener"><span class="tag">LIFE Programme · Clean Energy Transition</span><h3>Scaling SUPER-HEERO<span class="status">Running</span></h3><p>Taking a crowdfunding model for energy-efficiency retrofits beyond supermarkets to shopping centres, retailers, schools and energy communities.</p><p class="meta"><span><b>€1.5M</b> EU funding</span><span>2024–2027</span><span class="go">LIFE page ↗</span></p></a>
+      <a class="card" href="https://cordis.europa.eu/project/id/101138623" target="_blank" rel="noopener"><span class="tag">Horizon Europe · Buildings &amp; industry</span><h3>HYCOOL-IT<span class="status">Running</span></h3><p>Digital-twin tools and a compact chiller driven by waste heat, for efficient and reliable server rooms in commercial buildings.</p><p class="meta"><span><b>€3.0M</b> EU funding</span><span>2023–2026</span><span class="go">CORDIS ↗</span></p></a>
+      <a class="card" href="https://cordis.europa.eu/project/id/101168796" target="_blank" rel="noopener"><span class="tag">Horizon Europe · MSCA Doctoral Network</span><h3>FITNESS<span class="status">Running</span></h3><p>Training a new generation of researchers in active distribution networks, combining grid optimisation, electricity markets, communications and control.</p><p class="meta"><span><b>€2.6M</b> EU funding</span><span>2024–2028</span><span class="go">CORDIS ↗</span></p></a>
+      <a class="card" href="https://cordis.europa.eu/project/id/101096836" target="_blank" rel="noopener"><span class="tag">Horizon Europe · Innovation Action</span><h3>MASTERPIECE<span class="status done">Completed</span></h3><p>A digital platform that helps citizens set up and run energy communities, co-created with users and tested in pilots in France, Italy, Sweden and Türkiye.</p><p class="meta"><span><b>€6.0M</b> EU funding</span><span>2023–2026</span><span class="go">CORDIS ↗</span></p></a>
+    </div>
   </section>
 
   <section class="block" id="about">
