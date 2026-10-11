@@ -118,6 +118,8 @@ a.card:hover { border-color: var(--accent); transform: translateY(-3px); }
 /* Services */
 .fit { margin-bottom: clamp(2.5rem, 5vw, 3.5rem); padding: clamp(1.4rem, 3vw, 2rem); background: var(--accent-soft); border-radius: var(--radius); }
 .fit-lead { margin-top: .5rem; max-width: 46rem; }
+.fit-cta { display: flex; flex-wrap: wrap; align-items: center; gap: .8rem 1.2rem; margin-top: 1.6rem; padding-top: 1.4rem; border-top: 1px solid color-mix(in srgb, var(--accent) 25%, transparent); }
+.fit-cta p { color: var(--muted); font-size: .92rem; max-width: 30rem; }
 .fit ul { list-style: none; margin: 1.4rem 0 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.1rem clamp(1.25rem, 3vw, 2rem); }
 .fit li { padding-left: 1rem; border-left: 3px solid var(--accent); }
 .fit h3 { font-size: 1.02rem; font-weight: 700; }
@@ -190,8 +192,8 @@ footer { padding-block: 2rem 3rem; color: var(--muted); font-size: .85rem; displ
         <div><dt>5 countries</dt><dd>worked in so far, now based in Germany</dd></div>
       </dl>
       <div class="ctas">
-        <a class="btn primary" href="https://www.linkedin.com/in/fzahmed01" target="_blank" rel="noopener">Connect on LinkedIn</a>
-        <a class="btn ghost" href="#contact">Start a conversation</a>
+        <a class="btn primary" href="https://calendly.com/fzahmed01/15min" target="_blank" rel="noopener">Book a free 15-min call</a>
+        <a class="btn ghost" href="https://www.linkedin.com/in/fzahmed01" target="_blank" rel="noopener">Connect on LinkedIn</a>
       </div>
     </div>
     <figure class="portrait">
@@ -245,6 +247,10 @@ footer { padding-block: 2rem 3rem; color: var(--muted); font-size: .85rem; displ
         <li><h3>Does it fit EU priorities?</h3><p>Strategic and policy alignment</p></li>
         <li><h3>When, and under which rules?</h3><p>Timeline and regulatory context</p></li>
       </ul>
+      <div class="fit-cta">
+        <a class="btn primary" href="funding-fit-check.pdf" download>Download the free fit check (PDF)</a>
+        <p>A one-page checklist to test your idea against these six questions before you write a word.</p>
+      </div>
     </div>
     <div class="services">
       <div class="svc"><span class="step">1</span><div><h3>Funding strategy &amp; proposals</h3><p>Starting from your long-term goal, not the call. I shape the concept, build the consortium and write proposals evaluators can score with confidence. I specialise in Horizon Europe and the LIFE Programme.</p></div></div>
@@ -279,6 +285,7 @@ footer { padding-block: 2rem 3rem; color: var(--muted); font-size: .85rem; displ
       <p class="lead">I'm glad to talk with companies, research organisations, public bodies and innovators in any sector who want to secure EU funding or deliver a funded project well. Reach out about a call, a consortium or an early idea.</p>
     </div>
     <div class="channels">
+      <div class="chan"><div><p class="label">Book a call</p><a class="v" href="https://calendly.com/fzahmed01/15min" target="_blank" rel="noopener">Free 15-min intro call ↗</a></div></div>
       <div class="chan"><div><p class="label">Email</p><p class="v" id="email">fzahmed01@gmail.com</p></div><button class="copy-btn" type="button" id="copy-email">Copy</button></div>
       <div class="chan"><div><p class="label">LinkedIn</p><a class="v" href="https://www.linkedin.com/in/fzahmed01" target="_blank" rel="noopener">linkedin.com/in/fzahmed01</a></div></div>
       <div class="chan"><div><p class="label">GitHub</p><a class="v" href="https://github.com/fzahmed01/energy-ai-showcase" target="_blank" rel="noopener">Energy AI showcase ↗</a></div></div>
